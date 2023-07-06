@@ -42,7 +42,7 @@ const Header = () => {
             src="./assets/images/add-user.png"
             alt="image de création de compte"
           />
-          <p>Se connecter / s'incrire (employés seulement)</p>
+          <p>Se connecter (employés seulement)</p>
         </div>
       </div>
 
