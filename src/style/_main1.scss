@@ -1,0 +1,123 @@
+.main1_2 {
+  background-image: linear-gradient(315deg, #abe9cd 0%, #72d2ef 84%);
+  width: 95%;
+  margin: auto;
+  border-radius: 30px;
+}
+.main1 {
+  font-family: $font-text;
+  width: 95%;
+  margin: auto;
+  border-radius: 20px;
+  .Nos_services {
+    margin: 10px auto;
+    padding: 10px 0;
+    text-align: center;
+
+    h3 {
+      margin: 20px 0;
+      font-family: $font-text;
+    }
+
+    h2 {
+      color: white;
+      font-family: $font-title;
+    }
+  }
+
+  .sans_rdv {
+    background-color: #ffffff;
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+    padding: 30px;
+
+    h4 {
+      font-family: $font-text;
+      font-weight: bolder;
+      font-size: 1.3rem;
+    }
+
+    h3 {
+      margin: 20px 0;
+      font-family: $font-text;
+      font-weight: bolder;
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+  }
+
+  .services_details {
+    background-color: #ffffff;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 8px;
+    padding-top: 10px;
+
+    .detail1 {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 30px;
+
+      h3 {
+        font-family: $font-title;
+        font-size: 1.65rem;
+        font-weight: bolder;
+      }
+
+      p {
+        font-family: $font-text;
+        font-size: 0.85rem;
+        margin: 20px auto;
+        color: $text-grey;
+      }
+    }
+
+    .detail2 {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 30px;
+      .service {
+        display: flex;
+        flex-flow: wrap column;
+        div {
+          display: flex;
+          flex-flow: wrap column;
+          margin: 8px 0;
+          p {
+            position: relative;
+            align-self: flex-end;
+            left: -10%;
+          }
+          span {
+            display: inline-block;
+            width: 70vw;
+            height: 10px;
+            background-color: rgb(225, 108, 61);
+            border-radius: 10px;
+          }
+        }
+      }
+
+      .service_text {
+        margin: 25px 0;
+
+        h5 {
+          font-family: $font-title;
+          font-weight: bolder;
+          font-size: 1.7rem;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: $text-grey;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}

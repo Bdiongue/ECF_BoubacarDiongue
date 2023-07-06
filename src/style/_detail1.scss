@@ -1,0 +1,74 @@
+.detail1 {
+  position: relative;
+  font-family: $font-text;
+  button {
+    position: absolute;
+    top: 0.5%;
+    left: 2%;
+    background-color: $color-bg-grey;
+    color: black;
+    border: transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  button:hover {
+    background-color: black;
+    color: #ffffff;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+
+  .detail_container {
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 50px;
+    width: 100%;
+    margin: auto;
+
+    h4 {
+      background-color: black;
+      color: white;
+      font-family: $font-title;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+      margin: auto;
+    }
+
+    p {
+      background-color: $colorBG;
+      padding: 25px 0;
+      padding-left: 20px;
+
+      strong {
+        font-size: 1.2rem;
+        font-weight: bolder;
+        text-decoration: underline;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .vehicule_description {
+    width: 100%;
+    margin: auto;
+    background-color: $colorBG;
+    padding: 10px 10px;
+    padding-bottom: 20px;
+
+    h6 {
+      text-align: center;
+      font-family: $font-title;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+  }
+}

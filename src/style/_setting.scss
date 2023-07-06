@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Lato;
+  src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap");
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&display=swap");
+}
+
+$font-title: OpenSans;
+$font-text: Lato;
+
+$colorBG: rgb(243, 239, 239);
+$text-grey: rgb(120, 118, 118);
+$color-bg-grey: rgb(236, 234, 234);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
