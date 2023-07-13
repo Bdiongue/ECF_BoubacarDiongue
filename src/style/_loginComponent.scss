@@ -1,0 +1,81 @@
+@media only screen and (min-width: 600px) {
+  .login-component {
+    background-image: linear-gradient(0deg, #abe9cd 0%, #72d2ef 84%);
+    width: 95%;
+    margin: auto;
+    border-radius: 30px;
+    font-family: $font-text;
+
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      margin: 20px auto;
+      padding: 20px 0;
+      width: 90%;
+
+      .greeting-container {
+        margin: 40px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        h6 {
+          font-family: $font-title;
+          font-size: 3rem;
+          margin-bottom: 40px;
+        }
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 40%;
+        margin: auto;
+        background-color: rgba(243, 239, 239, 0.75);
+        padding: 30px;
+        border-radius: 10px;
+
+        #nom {
+          margin-bottom: 45px;
+        }
+
+        input {
+          background: white;
+          outline: none;
+          border: transparent;
+          border-radius: 5px;
+          width: 55%;
+          margin: auto;
+          margin-bottom: 20px;
+          padding: 5px 10px;
+        }
+
+        button {
+          background: #ffffff;
+          border-radius: 10px;
+          padding: 10px 20px;
+          border: transparent;
+          width: 80%;
+          margin: 20px 0;
+          transition: 0.3s ease;
+          align-self: center;
+          justify-self: center;
+          font-size: 100%;
+        }
+
+        button:hover {
+          background-color: black;
+          color: #ffffff;
+          transition: 0.3s ease;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

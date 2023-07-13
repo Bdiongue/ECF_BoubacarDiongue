@@ -37,11 +37,13 @@ const Header = () => {
         </div>
 
         <div className="right-header">
-          <img
-            className="add-user-img"
-            src="./assets/images/add-user.png"
-            alt="image de création de compte"
-          />
+          <NavLink to="/Login">
+            <img
+              className="add-user-img"
+              src="./assets/images/add-user.png"
+              alt="image de création de compte"
+            />
+          </NavLink>
           <p>Se connecter (employés seulement)</p>
         </div>
       </div>
