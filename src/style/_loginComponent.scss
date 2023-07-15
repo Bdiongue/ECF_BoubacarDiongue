@@ -41,8 +41,10 @@
         padding: 30px;
         border-radius: 10px;
 
-        #nom {
-          margin-bottom: 45px;
+        .error {
+          font-size: 0.8rem;
+          color: red;
+          margin-bottom: 25px;
         }
 
         input {
@@ -124,8 +126,10 @@
         padding: 30px;
         border-radius: 10px;
 
-        #nom {
-          margin-bottom: 45px;
+        .error {
+          font-size: 0.6rem;
+          color: red;
+          margin-bottom: 25px;
         }
 
         input {

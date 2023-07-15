@@ -977,8 +977,10 @@ a {
     padding: 30px;
     border-radius: 10px;
   }
-  .login-component .login-container form #nom {
-    margin-bottom: 45px;
+  .login-component .login-container form .error {
+    font-size: 0.8rem;
+    color: red;
+    margin-bottom: 25px;
   }
   .login-component .login-container form input {
     background: white;
@@ -1051,8 +1053,10 @@ a {
     padding: 30px;
     border-radius: 10px;
   }
-  .login-component .login-container form #nom {
-    margin-bottom: 45px;
+  .login-component .login-container form .error {
+    font-size: 0.6rem;
+    color: red;
+    margin-bottom: 25px;
   }
   .login-component .login-container form input {
     background: white;
@@ -1084,4 +1088,51 @@ a {
     transition: 0.3s ease;
     cursor: pointer;
   }
+}
+.employee_component {
+  background-image: linear-gradient(0deg, #abe9cd 0%, #72d2ef 84%);
+  width: 95%;
+  margin: auto;
+  border-radius: 30px;
+  font-family: Lato;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.employee_component .form-post {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.employee_component .form-post input {
+  margin-bottom: 20px;
+}
+.employee_component .form-post select {
+  margin-bottom: 20px;
+}
+.employee_component .form-post button {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: transparent;
+  width: 80%;
+  margin: 20px 0;
+  transition: 0.3s ease;
+  align-self: center;
+  justify-self: center;
+  font-size: 100%;
+}
+.employee_component .form-post button:hover {
+  background-color: black;
+  color: #ffffff;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.employee_component .container-title {
+  text-align: center;
+  padding: 20px;
+  font-family: OpenSans;
+  font-size: 2.5rem;
 }/*# sourceMappingURL=index.css.map */

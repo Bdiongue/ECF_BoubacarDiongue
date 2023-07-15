@@ -1,6 +1,34 @@
 import React, { useState } from "react";
+import Validation from "./LoginValidation";
+import "./LoginValidation";
+import axios from "axios";
 
-const LoginComponent = () => {
+const AdminComponent = () => {
+  const [values, setValues] = useState({
+    email: "",
+    password: "",
+  });
+
+  const [errors, setErrors] = useState({});
+  const handleInput = event => {
+    setValues(prev => ({
+      ...prev,
+      [event.target.name]: [event.target.value],
+    }));
+  };
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    const validationErrors = Validation(values);
+    setErrors(validationErrors);
+    if (validationErrors.email === "" && validationErrors.password === "") {
+      axios
+        .post("http://localhost:8081/parrotdata", values)
+        .then(res => console.log(res))
+        .catch(err => console.log(err));
+    }
+  };
+
   return (
     <div className="login-component">
       <div className="login-container">
@@ -10,11 +38,25 @@ const LoginComponent = () => {
         </div>
 
         <form onSubmit={handleSubmit} className="connexion-container">
-          <label for="nom">Pseudonyme</label>
-          <input id="nom" type="text" placeholder="Votre pseudonyme employé" />
+          <label for="email">Email</label>
+          <input
+            onChange={handleInput}
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Exemple@gmail.com"
+          />
+          {errors.email && <span className="error">{errors.email}</span>}
 
           <label for="password">Mot de passe</label>
-          <input id="password" type="password" placeholder="**************" />
+          <input
+            onChange={handleInput}
+            name="password"
+            id="password"
+            type="password"
+            placeholder="**************"
+          />
+          {errors.password && <span className="error">{errors.password}</span>}
 
           <button type="submit">Créer</button>
         </form>
@@ -23,4 +65,4 @@ const LoginComponent = () => {
   );
 };
 
-export default LoginComponent;
+export default AdminComponent;
