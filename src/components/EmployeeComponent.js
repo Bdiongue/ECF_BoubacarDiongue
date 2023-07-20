@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 
 const EmployeeComponent = () => {
-  const [file, setFile] = useState();
-
-  const handleFile = e => {
-    setFile(e.target.files[0]);
-  };
-
-  const handleUpload = () => {};
-
   return (
     <div className="employee_component">
       <div className="container-title">
@@ -24,14 +16,7 @@ const EmployeeComponent = () => {
         <label for="nom">Nom, marque, Modele :</label>
         <input type="text" id="nom" name="nom" required />
         <label htmlFor="image">Image :</label>
-        <input
-          type="file"
-          name="image"
-          id="image"
-          accept="image/*"
-          required
-          onChange={handleFile}
-        />
+        <input type="file" name="image" id="image" accept="image/*" required />
 
         <label for="prix">Prix :</label>
         <input type="number" name="prix" id="prix" required />
@@ -50,9 +35,15 @@ const EmployeeComponent = () => {
         <label for="year">Année</label>
         <input type="number" id="year" name="year" required />
 
-        <button onClick={handleUpload} type="submit">
-          Ajouter la voiture
-        </button>
+        <label for="description">Description</label>
+        <textarea
+          type="text"
+          id="description"
+          name="description"
+          required
+        ></textarea>
+
+        <button type="submit">Ajouter la voiture</button>
       </form>
     </div>
   );
