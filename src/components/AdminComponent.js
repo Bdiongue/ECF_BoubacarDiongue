@@ -26,6 +26,7 @@ const AdminComponent = () => {
         .post("http://localhost:8081/parrotdata", values)
         .then(res => console.log(res))
         .catch(err => console.log(err));
+      alert("employé créé avec succès");
     }
   };
 
